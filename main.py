@@ -5,6 +5,7 @@ import dash_html_components as html
 
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.Iframe(
@@ -16,6 +17,8 @@ app.layout = html.Div([
 
 
 if __name__ == '__main__':
-    #app.run_server(debug=True)
+
+    #Uncomment this to host locally useful for testing
+    #app.run_server()#debug=True)
 
     app.run_server(host='0.0.0.0', port=8080, use_reloader=True)
