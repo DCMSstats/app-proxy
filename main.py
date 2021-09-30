@@ -11,7 +11,7 @@ app.layout = html.Div([
     html.Iframe(
     src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
     #src=f'https://gva-nowcast-subsector-gambling-ind-dot-dcms-statistics.nw.r.appspot.com/',
-    height=400, width=1400, style={'backgroundColor': '#494949', 'border': '0px 0px 0px 0px'}
+    height=550, width=1450, style={'backgroundColor': '#494949', 'border': '0px 0px 0px 0px'}
 )])
 
 
