@@ -8,9 +8,11 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.Iframe(
-    src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
+    #src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
+    src=f'https://gva-nowcast-subsector-gambling-ind-dot-dcms-statistics.nw.r.appspot.com/',
     height=700, width=1200, style={'backgroundColor': '#494949', }
 )])
+
 
 
 if __name__ == '__main__':
