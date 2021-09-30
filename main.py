@@ -10,7 +10,7 @@ server = app.server
 app.layout = html.Div([
     html.Iframe(
         src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
-        height=500,
+        height=465,
         width=1450, style={
             'backgroundColor': '#494949',
             'border': 'none',
