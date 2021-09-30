@@ -4,15 +4,15 @@ runtime: python37
 instance_class: B8
 
 basic_scaling:
-    max_instances: 18
-    idle_timeout: 20m
+    max_instances: 2
+    idle_timeout: 10m
 
 resources:
     cpu: 1
     memory_gb: 1
-    disk_size_gb: 1
+    disk_size_gb: 10
 
-entrypoint: gunicorn -b 0.0.0.0:$PORT -w 8 main:server --timeout 300
+entrypoint: gunicorn -b 0.0.0.0:8080 main:server
 
 env_variables:
     PSYCOPG2_POSTGRESQL_URI: postgresql://hexmap:manhattan@/postgres?host=/cloudsql/dcms-culture-heritage-map:europe-west2:chc-dcms
