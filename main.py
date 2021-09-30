@@ -9,8 +9,14 @@ server = app.server
 
 app.layout = html.Div([
     html.Iframe(
-    src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
-    height=560, width=1450, style={'backgroundColor': '#494949', 'border': '0px 0px 0px 0px', 'frameBorder': '0'}
+        src=f'https://gva-nowcast-complete-data-dot-dcms-statistics.nw.r.appspot.com/',
+        height=560,
+        width=1450, style={
+            'backgroundColor': '#494949',
+            'border': 'none',
+            'frameBorder': 'none',
+            'frameborder': 'none'
+        }
 )])
 
 
@@ -18,6 +24,6 @@ app.layout = html.Div([
 if __name__ == '__main__':
 
     #Uncomment this to host locally useful for testing
-    #app.run_server()#debug=True)
+    app.run_server()#debug=True)
 
-    app.run_server(host='0.0.0.0', port=8080, use_reloader=True)
+    #app.run_server(host='0.0.0.0', port=8080, use_reloader=True)
